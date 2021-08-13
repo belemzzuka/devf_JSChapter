@@ -378,6 +378,7 @@ Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “mot
 Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué: 
 total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos. */
 
+/*
 var tipoVehiculo = prompt("Que tipo de vehiculo usas: ");
 var kmRecorrido = Number(prompt("Cuantos kms recorriste? "));
 var litrosConsumidos = Number(prompt("Cuantos litros consumiste? "));
@@ -408,3 +409,19 @@ if (tipoVehiculo=="coche"){
         document.write("tu total a pagar es de $" + totalPago);
     }
 }
+*/
+
+var alAzar = [];
+alAzar[0] = (Math.floor(Math.random()*10)+1);
+alAzar[1] = (Math.floor(Math.random()*10)+1);
+alAzar[2] = (Math.floor(Math.random()*10)+1);
+alAzar[3] = (Math.floor(Math.random()*10)+1);
+alAzar[4] = (Math.floor(Math.random()*10)+1);
+alAzar[5] = (Math.floor(Math.random()*10)+1);
+alAzar[6] = (Math.floor(Math.random()*10)+1);
+alAzar[7] = (Math.floor(Math.random()*10)+1);
+alAzar[8] = (Math.floor(Math.random()*10)+1);
+alAzar[9] = (Math.floor(Math.random()*10)+1);
+
+console.log(alAzar);
+
