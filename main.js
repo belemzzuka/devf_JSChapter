@@ -411,6 +411,8 @@ if (tipoVehiculo=="coche"){
 }
 */
 
+//Crear un array vacío, luego generar 10 números al azar y guardarlos en un array. Mostrar en consola el resultado del array.
+/*
 var alAzar = [];
 alAzar[0] = (Math.floor(Math.random()*10)+1);
 alAzar[1] = (Math.floor(Math.random()*10)+1);
@@ -424,4 +426,57 @@ alAzar[8] = (Math.floor(Math.random()*10)+1);
 alAzar[9] = (Math.floor(Math.random()*10)+1);
 
 console.log(alAzar);
+*/
 
+//El usuario deberá ingresar un string con varias palabras separadas por coma en un popup y se deben convertir en un array, 
+//(el usuario ingresa: "1,2,3,4,5" y se convierte en [1,2,3,4,5]). Mostrar en consola dicho resultado.
+/*
+var stringUsuario = prompt("Ingresa una cadena de caracteres. Separalos con una coma:");
+
+var arrayUsuario = stringUsuario.split(",");
+
+console.log(arrayUsuario);
+*/
+
+//De acuerdo al array [10,40,30,20,15,5], imprime lo siguiente: El arreglo ordenado de menor a mayor, muestra el número menor y el número mayor. 
+//Tip: Busca en google los métodos de JavaScript que regresan el mayor y menor elemento de un arreglo.
+/*
+var array = [10,40,30,20,15,5];
+
+console.log(array.sort(function(a, b){return a-b}));
+console.log(Math.min(...array));
+console.log(Math.max(...array));
+*/
+
+//Crear un array vacío, luego generar 10 números al azar y guardarlos en un array. Mostrar en consola el resultado del array. USANDO WHILE.
+/*
+var alAzar = [];
+var index = 0;
+
+while(index<10){
+    alAzar[index] = (Math.floor(Math.random()*100));
+    index++;
+}
+console.log(alAzar);
+*/
+
+//Guarda un arreglo de valores introudcidos
+//Si el usuario no introudce un valor, termina el ciclo.
+/*
+var arreglo = [];
+var userInput;
+do {
+    userInput = prompt("Ingresa cualquier carácter:");
+    arreglo.push(userInput);
+}
+while(!(userInput==""));
+
+console.log("Introdujiste estos valores: " + arreglo);
+*/
+
+//Conteo de numeros del 1 al 10 en consola
+var contador = 0;
+do{
+    contador++;
+    console.log("Conteo: " + contador);
+} while(contador<10);
