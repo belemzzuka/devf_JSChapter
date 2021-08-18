@@ -475,8 +475,151 @@ console.log("Introdujiste estos valores: " + arreglo);
 */
 
 //Conteo de numeros del 1 al 10 en consola
+/*
 var contador = 0;
 do{
     contador++;
     console.log("Conteo: " + contador);
 } while(contador<10);
+*/
+
+//Ejercicio1
+//Crea un programa que pregunte al usuario un número. Mostrar los números que son múltiplos de 5 desde 1 hasta el número introducido por el usuario. 
+/*
+var userInput;
+var numeros = [];
+var index = 0;
+
+userInput = parseInt(prompt("Ingresa un numero: "));
+
+do {
+    index++;;
+    if((index%5)==0){
+        numeros.push(index);
+    }
+} while(index<userInput);
+console.log("Estos son multiplos de 5: " + numeros);
+*/
+
+//Ejercicio2
+//Crea un programa que solicite al usuario 2 números entre 1 y 50. 
+//Posteriormente mostrar en consola los números del 1 hasta el 50, pero añadir el mensaje “¡Lotería!” solo al mostrar los números indicados por el usuario.
+/*
+var index;
+var arreglo[];
+var num1;
+var num2;
+
+num1 = ("")
+*/
+
+//Ejercicio3
+//Crea un programa que solicite al usuario números, si lo que este introduce es un número guardarlo en un arreglo. 
+//Para terminar el capturar el usuario debe ingresar el número 0. Finalmente mostrar la lista de números capturados en pantalla o en la consola.
+/*
+var index = 0;
+var arreglo = [];
+var entrada;
+
+do{
+    entrada = parseInt(prompt("Ingresa un numero: "));
+    if(typeof(entrada)=="number")
+    {
+        arreglo.push(entrada);
+    }
+} while(entrada!=0);
+
+console.log("Los numeros ingresados son " + arreglo);
+*/
+
+//Ejercicio4
+//Crea un programa que solicite al usuario letras o palabras, si es así guardar el resultado. 
+//Para terminar de capturar el usuario no debe escribir valor alguno. Al terminar de capturar, mostrar en pantalla la concatenación de todas las palabras capturadas.
+/*
+var arreglo = [];
+var userInput;
+
+do{
+    userInput = prompt("Ingresa una letra o una palabra: ");
+    arreglo.push(userInput);
+} while (userInput!="");
+
+var index = 0;
+var stringFinal = "";
+
+while(index<arreglo.length){
+    stringFinal = stringFinal + " " + arreglo[index];
+    index++;
+}
+
+console.log(stringFinal);
+*/
+
+//Ejercicio5
+//Crea un programa que solicite al usuario un día de la semana (ej: lunes, jueves, domingo, etc). 
+//El programa mostrará un mensaje personalizado para cada día de la semana por medio de un alert. 
+//Y seguirá pidiendo al usuario introducir otro día. En caso de que el día introducido sea domingo mostrar al usuario el mensaje “Ve a descansar” y terminar la captura de información.
+/*
+var userInput;
+
+do{
+    userInput = prompt("Dame un día de la semana: ").toLowerCase();
+    alert("Es " + userInput);
+} while (userInput!="Domingo");
+alert("Ve a descansar");
+*/
+
+//Ejercicio5 Opcion2
+/*
+var userInput;
+
+do{
+    userInput = prompt("Dame un día de la semana: ").toLowerCase();
+    var mensaje = "";
+    if(userInput=="lunes"){
+        mensaje = "EL DIA DE HOY ES LUNES ANIMO"
+    } else if(userInput=="martes"){
+        mensaje = "MARTES ... NI MODO"
+    } else if(userInput=="miercoles"){
+        mensaje = "OMBLIGO DE SEMANA"
+    } else if(userInput=="jueves"){
+        mensaje = "CASI VIERNES"
+    } else if(userInput=="viernes"){
+        mensaje = "YEIII VIERNES"
+    } else if(userInput=="sabado"){
+        mensaje = "SABADO SIN FIESTA"
+    } else if(userInput=="domingo"){
+        mensaje = "VE A DESCANSAR"
+    } else {
+        mensaje = "ESE NO ES UN DIA VALIDO"
+    }
+    alert(mensaje);
+} while (userInput!="domingo");
+*/
+
+//Crea un programa que imprima en consola los números impares del 1 al 50.
+/*
+for (var i=0 ; i<=50 ; i++){
+    if(i%2!=0){
+        console.log(i);
+    }
+}
+*/
+
+//Crea un programa que recorra el arreglo [4,”dos”,8,”tres”,5,9,1,”cero”] y muestre en consola solo los elementos que son tipo número.
+
+var arreglo = [4,"dos",8,"tres",5,9,1,"cero"];
+
+/*
+for (var i=0; i<arreglo.length; i++){
+    if(typeof(arreglo[i])=="number"){
+        console.log(arreglo[i]);
+    }
+}
+*/
+
+for (var i=0; i<arreglo.length; i++){
+    if(parseInt(arreglo[i])){
+        console.log(arreglo[i]);
+    }
+}
