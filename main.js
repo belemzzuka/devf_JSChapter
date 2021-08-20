@@ -618,8 +618,171 @@ for (var i=0; i<arreglo.length; i++){
 }
 */
 
+/*
 for (var i=0; i<arreglo.length; i++){
     if(parseInt(arreglo[i])){
         console.log(arreglo[i]);
     }
 }
+*/
+
+//Fibonacci
+//imprimir en consola los numeros entre 0 y 10000 de la secuencia de fibonacci,
+//Se trata de una secuencia infinita de números naturales  a partir del 0 y el 1, se van sumando a pares, de manera que cada número es igual a la suma de sus dos anteriores:
+//en consola esta seria la salida esperada: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
+/*
+var i;
+var fibonacci = [0,1];
+var suma=0;
+
+for (i = 2; suma <= 10000; i++) {
+    suma = fibonacci[i-2]+fibonacci[i-1];
+    fibonacci.push(suma);
+    console.log(fibonacci[i-1]);
+}
+*/
+
+
+//FUNCIONES
+/*
+
+function Suma (num1, num2){
+    return num1+num2;
+}
+function Resta (num1, num2){
+    return num1-num2;
+}
+function Multiplicacion (num1, num2){
+    return num1*num2;
+}
+function Division (num1, num2){
+    return num1/num2;
+}
+
+function Calculadora(){
+    var continuar = true;
+    do{
+        var operacion = prompt("Que operacion deseas realizar (+,-,*,/)? ");
+        var resultado = 0;
+
+        if(operacion == "+"){
+            var num1 = parseInt(prompt("Ingresa el primer numero"));
+            var num2 = parseInt(prompt("Ingresa el segunda numero"));
+            resultado = Suma(num1,num2);
+        } else if(operacion == "-"){
+            var num1 = parseInt(prompt("Ingresa el primer numero"));
+            var num2 = parseInt(prompt("Ingresa el segunda numero"));
+            resultado = Resta(num1,num2);
+        } else if(operacion == "*"){
+            var num1 = parseInt(prompt("Ingresa el primer numero"));
+            var num2 = parseInt(prompt("Ingresa el segunda numero"));
+            resultado = Multiplicacion(num1,num2);
+        } else if(operacion == "/"){
+            var num1 = parseInt(prompt("Ingresa el primer numero"));
+            var num2 = parseInt(prompt("Ingresa el segunda numero"));
+            resultado = Division(num1,num2);
+        }else {
+            console.log("No entiendo");
+            continuar = false;
+        }
+        console.log(`El resultado de la operacion (${operacion}) es : ${resultado}`);
+    } while (continuar == true);
+}
+*/
+
+
+// 1. Hacer una función que convierta de grados centígrados a Farenheit.
+/*
+var numC = prompt("Grados Celsius a convertir a Farenheit: ");
+
+function convertCtoF(numC){
+        return (numC * (9/5)) + 32;
+}
+console.log(`${numC} son ${convertCtoF(numC)} F`);
+*/
+
+// 2. Hacer una función que muestre la tabla de multiplicar de un número
+/*
+var num = parseInt(prompt("Dame un numero: "));
+var tabla = [];
+
+function tablaMultiplicar(num){
+    for (var i=0; i<=10; i++){
+        var resultado = num * i;
+        tabla.push(resultado);
+    }
+    return tabla;
+}
+console.log(tablaMultiplicar(num));
+*/
+
+//3. Escribe una función que imprima todos los números naturales de 1 hasta n (el usuario elige n)
+/*
+var n = parseInt(prompt("Dame un numero: "));
+var naturales = [];
+
+function numerosNaturales(n){
+    for(var i=1; i<=n; i++){
+        naturales.push(i);
+    }
+    return naturales;
+}
+document.write(`<h1>${numerosNaturales(n)}</h1>`);
+*/
+
+
+//4. Escribe una función que imprima todos los números naturales en reversa, desde n (el usuario indica) hasta 1.
+
+/*
+var n = parseInt(prompt("Dame un numero: "));
+var naturales = [];
+
+function numerosNaturales(n){
+    for(var i=n; i>=0; i--){
+        naturales.push(i);
+    }
+    return naturales;
+}
+
+document.write(`<h1>${numerosNaturales(n)}</h1>`);
+
+*/
+
+
+//5. Escribe una función para ingresar cualquier letra del alfabeto y verifique si es vocal o consonante
+/*
+var letra = prompt("Ingrese una letra: ");
+
+function vocales(letra){
+    if((letra=='a')||(letra=='e')||(letra=='i')||(letra=='o')||(letra=='u')){
+        return "Es una vocal";
+    } else {
+        return "Es una consonante";
+    }
+}
+
+document.write(`<h1>${vocales(letra)}</h1>`);
+*/
+
+
+//6. Escriba una función donde solicite un número al usuario y me calcule su factorial.
+/*
+function calcularFactorial(num){
+    var resultado = 1;
+    for (let i=1; i<=num; i++){
+        resultado = resultado * i;
+    }
+    document.write(`<h1> El factorial de ${num} es ${resultado}`);
+}
+
+var userInput = parseInt(prompt("Dame un numero: "));
+
+if(!isNaN(userInput)){
+    calcularFactorial(userInput);
+} else{
+    console.log("Ingresa un numero valido");
+}
+*/
+
+
+
