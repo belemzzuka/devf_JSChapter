@@ -784,5 +784,12 @@ if(!isNaN(userInput)){
 }
 */
 
+let persona = {
+    edad:29,
+    nombre:"Carlos",
+    vivo:true,
+    gustos:["manzana","pera","uvas"]
+};
 
+console.log(persona.gustos[1]);
 
