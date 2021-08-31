@@ -62,7 +62,7 @@ persona1.setNombre = "hola";
 console.log(persona1.getNombre);
 */
 
-
+/*
 class Alumnos {
     constructor(nombre, apellido, califFinal, inscrito){
         this._nombre = nombre;
@@ -118,3 +118,4 @@ console.log(alumno1.ObtenerInicialesDeAlumno());
 console.log(alumno1.ObtenerNombreCompleto());
 console.log(alumno1.obtenerPromedio());
 console.log(alumno1.Aprobado());
+*/
