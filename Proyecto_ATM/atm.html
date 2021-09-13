@@ -30,7 +30,17 @@
                     <button id="btnRetirar" class="btn btn-primary" type="button">Retirar Dinero</button>
                   </div>
                 <div class="col-12">
-                    <p id="saldo" class="display-6 text-center mt-5"></p>
+                    <p id="mensajes-confirmacion" class="display-6 text-center mt-5"></p>
+                </div>
+                <div id="depositar" class="col-12">
+                    <label for="txt-cantidad-depositar" class="form-label">Cantidad a depositar:</label>
+                    <input type="number" class="form-control" name="txt-cantidad-depositar" id="txt-cantidad-depositar">
+                    <button type="button" id="btn-depositar-cantidad" class="btn btn-primary">Depositar</button>
+                </div>
+                <div id="retirar" class="col-12">
+                    <label for="txt-cantidad-retirar" class="form-label">Cantidad a retirar:</label>
+                    <input type="number" class="form-control" name="txt-cantidad-retirar" id="txt-cantidad-retirar">
+                    <button type="button" id="btn-retirar-cantidad" class="btn btn-primary">Retirar</button>
                 </div>
             </div>
         </div>
